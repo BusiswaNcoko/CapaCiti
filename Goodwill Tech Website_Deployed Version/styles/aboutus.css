@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Raleway:wght@100;200;300;400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: peachpuff;
+	font-family: 'Cinzel', serif, 'Raleway', sans-serif;
+}
+
+.header--home {
+	width: 100vw;
+	height: 100px;
+	padding: 0 5rem;
+	background-color: #f1faee;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.logo--container {
+	width: 50px;
+	height: auto;
+	overflow: hidden;
+}
+
+.logo--container img {
+	clip-path: circle(60%);
+	width: 100%;
+	height: 100%;
+}
+
+.nav-list {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.nav-list--item {
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+	letter-spacing: 2px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	transition: 0.7s;
+}
+
+.nav-list--item:hover {
+	background-color: #ffd7ba;
+}
+
+.nav-item--link {
+	color: #353745;
+	text-decoration: none;
+	margin-bottom: 0.5rem;
+	padding: 0.6rem 1.5rem 0;
+}
+
+.link-border {
+	background-color: #987239;
+	width: 0px;
+	height: 2px;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	transition: all 0.3s;
+	opacity: 0;
+}
+
+.nav-list--item:hover > .link-border {
+	width: 100%;
+	opacity: 1;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.intro {
+	width: 100%;
+	height: auto;
+	background-color: grey;
+	background-image: url(../assets/backgrond.jpg);
+	background-size: contain;
+	padding: 5rem;
+	color: white;
+}
+
+.content {
+	display: flex;
+	justify-content: space-evenly;
+	min-width: 100vw;
+	height: auto;
+	padding: 5rem;
+	background-color: peachpuff;
+}
+
+.content img {
+	width: 30rem;
+	height: auto;
+}
+
+.content-info {
+	width: 20rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1faee ;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	font-size: 0.9rem;
+	font-family: 'Times New Roman', Times, serif;
+ }
+ .fa {
+	padding: 10px;
+}
+.fa:hover {
+	background-color: #5f585f;
+}
