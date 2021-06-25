@@ -1,8 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 html,
  body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(241, 115, 227);
     
  }
  .Landingpage {
@@ -74,7 +78,7 @@ html,
 .nav-bar {
     width: 100%;
     height: 50px;
-    background-color: crimson;
+    background-color: rgb(241, 115, 227);
 
     display: flex;
     flex-direction: column;
@@ -88,13 +92,35 @@ html,
 
 /*===========home page ============*/
 .welcome {
-    height: 500px;
+    min-height: 80vh;
+    background-image: url(images/heart.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    opacity: 1;
+
+    background-attachment: fixed;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
 }
 .about {
     height: 500px;
-    background-color: cyan;
+    
 }
 .projects {
     height: 500px;
     background-color: yellowgreen;
+}
+.welcome h1 {
+    font-family: 'Abril Fatface', cursive;
+    color: purple;
+    font-weight: 900;
+}
+.welcome {
+    text-align: center;
 }
